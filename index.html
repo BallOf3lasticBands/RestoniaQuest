@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="favicon1.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body style="background-color:black;">
+  <body style="background-color: #93835a;">
+	<div id="tilingbackground"></div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -120,6 +121,11 @@
 			position : absolute;
 			bottom: 0%;
 			width: 100%;
+		}
+		#tilingbackground{
+			background: url(images/mapGrass.png) repeat-x;
+			width: 64px;
+			height: 64px;
 		}
 	</style>
 	<footer>
