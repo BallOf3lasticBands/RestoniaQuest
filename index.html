@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Princess Quest Map1</title>
+    <title>Unity WebGL Player | RestoniaQuest</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Princess Quest Map1</div>
+        <div id="unity-build-title">RestoniaQuest</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Firebase Testbuild.loader.js";
+      var loaderUrl = buildUrl + "/DCF Testbuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Firebase Testbuild.data",
-        frameworkUrl: buildUrl + "/Firebase Testbuild.framework.js",
-        codeUrl: buildUrl + "/Firebase Testbuild.wasm",
+        dataUrl: buildUrl + "/DCF Testbuild.data.gz",
+        frameworkUrl: buildUrl + "/DCF Testbuild.framework.js.gz",
+        codeUrl: buildUrl + "/DCF Testbuild.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Princess Quest Map1",
+        companyName: "AVersocity",
+        productName: "RestoniaQuest",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -115,29 +115,5 @@
       };
       document.body.appendChild(script);
     </script>
-	<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDYGuVULy20ibA5ISEWTEozruXDjtLfsWs",
-    authDomain: "dnd-princessquestdb.firebaseapp.com",
-    databaseURL: "https://dnd-princessquestdb-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "dnd-princessquestdb",
-    storageBucket: "dnd-princessquestdb.appspot.com",
-    messagingSenderId: "643032356551",
-    appId: "1:643032356551:web:bd572a98e16ea45fd290e2",
-    measurementId: "G-FX2CKR8KSZ"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
   </body>
 </html>
