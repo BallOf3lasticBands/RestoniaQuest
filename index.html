@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>RestoniaQuest</title>
-    <link rel="shortcut icon" href="favicon1.ico">
+    <title>Unity WebGL Player | RestoniaQuest</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body style="background-color: #b8a77d;">
@@ -19,9 +19,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <!--<div id="unity-webgl-logo"></div> -->
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <!--<div id="unity-build-title">RestoniaQuest</div> -->
+        <div id="unity-build-title">RestoniaQuest</div>
       </div>
     </div>
     <script>
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/DCF Testbuild.loader.js";
+      var loaderUrl = buildUrl + "/BattleTest Testbuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/DCF Testbuild.data",
-        frameworkUrl: buildUrl + "/DCF Testbuild.framework.js",
-        codeUrl: buildUrl + "/DCF Testbuild.wasm",
+        dataUrl: buildUrl + "/BattleTest Testbuild.data",
+        frameworkUrl: buildUrl + "/BattleTest Testbuild.framework.js",
+        codeUrl: buildUrl + "/BattleTest Testbuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "AVersocity",
         productName: "RestoniaQuest",
@@ -98,6 +98,7 @@
         canvas.style.height = "600px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/BattleTest Testbuild.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -126,7 +127,7 @@
 			background-image: url(images/backgroundImage.png);
 			background-repeat: repeat;
 			background-size: cover;
-			height: 128px;
+			height: 100%;
 		}
 	</style>
 	<footer>
