@@ -7,8 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body style="background-color: #b8a77d;">
-	<div id="tilingbackground"></div>
+  <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -57,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BattleTest Testbuild.loader.js";
+      var loaderUrl = buildUrl + "/PreAlpha.loader.js";
       var config = {
-        dataUrl: buildUrl + "/BattleTest Testbuild.data",
-        frameworkUrl: buildUrl + "/BattleTest Testbuild.framework.js",
-        codeUrl: buildUrl + "/BattleTest Testbuild.wasm",
+        dataUrl: buildUrl + "/PreAlpha.data",
+        frameworkUrl: buildUrl + "/PreAlpha.framework.js",
+        codeUrl: buildUrl + "/PreAlpha.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "AVersocity",
         productName: "RestoniaQuest",
@@ -98,7 +97,7 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/BattleTest Testbuild.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/PreAlpha.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -117,24 +116,5 @@
       };
       document.body.appendChild(script);
     </script>
-	<style>
-		footer{
-			position : absolute;
-			bottom: 10px;
-			width: 100%;
-		}
-		#tilingbackground{
-			background-image: url(images/backgroundImage.png);
-			background-repeat: repeat;
-			background-size: cover;
-			height: 100%;
-		}
-	</style>
-	<footer>
-		<center>
-			<p style="color:white;">RestoniaQuest by Avery</p>
-			<a style="color:grey;" href="https://working-talk-605.notion.site/Data-Handling-in-Online-Services-c1149be7240146f0823aade71f938f32"><i>Data Handling in Online Services</i></a>
-		</center>
-	</footer>
   </body>
 </html>
