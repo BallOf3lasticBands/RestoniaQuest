@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body>
+  <body style="background-color: #b8a77d;">
+  <div id="tilingbackground"></div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -116,5 +117,28 @@
       };
       document.body.appendChild(script);
     </script>
+	<style>
+		footer{
+			position : absolute;
+			bottom: 10px;
+			width: 100%;
+		}
+		#tilingbackground{
+			background-image: url(images/backgroundImage.png);
+			background-repeat: repeat;
+			background-size: cover;
+			height: 100%;
+		}
+	</style>
+	<center>
+		<p style="color:red;">Warning! Unstable version</p>
+		<p style="color:red;">Warning! Stores data local in browser</p>
+	</center>
+	<footer>
+		<center>
+			<p style="color:white;">RestoniaQuest by Avery</p>
+			<a style="color:grey;" href="https://working-talk-605.notion.site/Data-Handling-in-Online-Services-c1149be7240146f0823aade71f938f32"><i>Data Handling in Online Services</i></a>
+		</center>
+	</footer>
   </body>
 </html>
